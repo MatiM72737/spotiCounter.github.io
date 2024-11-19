@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 120px);
+    border: 1px solid #1db954;
+    border-radius: 5px;
+    background-color: #282828;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #1aa34a;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#results h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    margin: 5px 0;
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.artist-icon {
+    width: 100px; /* Szerokość ikony artysty */
+    height: 100px; /* Wysokość ikony artysty */
+    border-radius: 50%; /* Okrągły kształt */
+    margin-bottom: 10px; /* Odstęp pod ikoną */
+}
