@@ -94,6 +94,7 @@ async function displayTracks() {
     document.getElementById('results').innerHTML = resultsHTML;
 
     console.log(`Total tracks: ${totalTracks}, Total duration: ${totalDurationMinutes}:${totalDurationSeconds}`);
+
 }
 
 document.getElementById('searchButton').addEventListener('click', displayTracks);
