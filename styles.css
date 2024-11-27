@@ -100,3 +100,7 @@ button:hover {
     border-radius: 50%; /* Okrągły kształt */
     margin-bottom: 10px; /* Odstęp pod ikoną */
 }
+a{
+    color:white;
+    text-decoration: none;
+}

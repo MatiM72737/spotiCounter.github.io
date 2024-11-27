@@ -80,7 +80,7 @@ async function displayTracks() {
         const tracks = await fetchTracksFromAlbum(album.id);
         resultsHTML += `<div id='h2Parent'onclick="if(document.getElementById('ListOf.${album.name.replace(/[^a-zA-Z0-9-_]/g, '')}').style.display === 'none'){document.getElementById('ListOf.${album.name.replace(/[^a-zA-Z0-9-_]/g, '')}').style.display = 'flex';}else{document.getElementById('ListOf.${album.name.replace(/[^a-zA-Z0-9-_]/g, '')}').style.display = 'none'}"><img src='${album.images[2].url}'></img><h2>${album.name}</h2></div><ul id="ListOf.${album.name.replace(/[^a-zA-Z0-9-_]/g, '')}" style='display:none'>`;
         for (const track of tracks) {
-            resultsHTML += `<li>${track.name} - ${Math.floor(track.duration_ms / 60000)}:${((track.duration_ms % 60000) / 1000).toFixed(0).padStart(2, '0')}</li>`;
+            resultsHTML += `<li><a href='${track.external_urls['spotify']}' target='_blank'>${track.name} - ${Math.floor(track.duration_ms / 60000)}:${((track.duration_ms % 60000) / 1000).toFixed(0).padStart(2, '0')}</a></li>`;
             totalTracks++;
             totalDuration += track.duration_ms;
         }
