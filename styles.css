@@ -51,14 +51,40 @@ button:hover {
     text-align: left;
 }
 
+#results #h2Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#results #h2Parent img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 10px; /* Lekkie zaokrąglenia */
+    margin-right: 10px; /* Odstęp od opisu */
+    user-select: none; /* Wyłączenie zaznaczania tekstu */
+}
+
 #results h2 {
     font-size: 20px;
-    margin: 10px 0 5px;
+    margin: 0;
+    user-select: none; /* Wyłączenie zaznaczania tekstu */
 }
+
+#results #h2Parent:hover {
+    background-color: #333333; /* Subtelny efekt hover */
+    border-radius: 10px;
+}
+
 
 #results ul {
     list-style-type: none;
     padding: 0;
+    flex-direction: column;
 }
 
 #results li {
